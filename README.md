@@ -179,8 +179,9 @@ http://<NODE-IP>:30007
 ## ⚠️ Troubleshooting
 
 ### Kubernetes Not Running
+```
 minikube start
-
+```
 ---
 
 ## 🎯 Key Learnings
