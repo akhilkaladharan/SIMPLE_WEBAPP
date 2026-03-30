@@ -22,32 +22,7 @@ This project demonstrates a complete **end-to-end DevOps workflow**:
 ---
 
 ## 📁 Project Structure
-
-
-## 📌 Overview
-
-This project demonstrates a complete **end-to-end DevOps workflow**:
-
-- Simple Node.js web application  
-- Containerization using Docker  
-- CI pipeline using Jenkins  
-- Deployment on Kubernetes  
-- Service exposure using NodePort  
-
----
-
-## 🧱 Tech Stack
-
-- Node.js  
-- Docker  
-- Jenkins  
-- Kubernetes  
-
----
-
-## 📁 Project Structure
 ├── app.js
-
 
 ├── package.json
 
@@ -69,8 +44,8 @@ This project demonstrates a complete **end-to-end DevOps workflow**:
 - Runs on port: **3000**
 - Response:
 
-  
-  Hello from DevOps Project 🚀
+
+ Hello from DevOps Project 🚀
 
 
 ---
@@ -78,12 +53,11 @@ This project demonstrates a complete **end-to-end DevOps workflow**:
 ## ⚙️ Setup Steps
 
 ### 1️⃣ Clone Repository
-
-git clone https://github.com/
-<your-username>/simple-web-app.git
-
+```text
+git clone https://github.com/<your-username>/simple-web-app.git
 
 cd simple-web-app
+```
 
 
 ---
@@ -93,34 +67,34 @@ cd simple-web-app
 node app.js
 
 Access:
+```
 http://localhost:3000/
-
+```
 
 ---
 
 ## 🐳 Docker Setup
 
 ### Build Image
-docker build -t simple-web-app .
 
+```
+docker build -t simple-web-app .
+```
 ### Run Container
 
+```
 docker run -d -p 3000:3000 --name web-container simple-web-app
+```
 
 ---
 
 ## 🚀 Push to Docker Hub
 
----
-
-## 🚀 Push to Docker Hub
-
-
-
-
+```
 docker tag simple-web-app <your-dockerhub-username>/simple-web-app
-docker push <your-dockerhub-username>/simple-web-app
 
+docker push <your-dockerhub-username>/simple-web-app
+```
 ---
 
 ## ⚙️ Jenkins Pipeline
@@ -136,32 +110,44 @@ Pipeline stages:
 ## ☸️ Kubernetes Deployment
 
 ### Apply Deployment
+```
 kubectl apply -f deployment.yaml
+```
 
 ### Apply Service
+```
 kubectl apply -f service.yaml
-
+```
 
 ---
 
 ## 📊 Verification
 
 ### Check Pods
+```
 kubectl get pods
-
+```
 
 ### Check Services
+```
 kubectl get svc
+```
+
 ---
 
 ## 🌐 Access Application
 
 ### Using Minikube
+
+```
 minikube service simple-web-service
+```
 
 ### Using NodePort
-http://<NODE-IP>:30007
 
+```
+http://<NODE-IP>:30007
+```
 
 ---
 
@@ -195,8 +181,6 @@ http://<NODE-IP>:30007
 ### Kubernetes Not Running
 minikube start
 
-
-
 ---
 
 ## 🎯 Key Learnings
@@ -208,15 +192,6 @@ minikube start
 
 ---
 
-## 🚀 Future Improvements
-
-- Automate Docker push in Jenkins  
-- Add Kubernetes deployment stage  
-- Use Ingress  
-- Deploy to cloud (AWS/GCP/Azure)  
-
----
-
 ## 👨‍💻 Author
 
 **Akhil K**  
@@ -224,6 +199,7 @@ DevOps Engineer
 
 ---
 
-## ⭐ Contribute
+## ⭐ Support
 
-Feel free to fork this repository and enhance the project!
+If you like this project, give it a ⭐ on GitHub!
+
