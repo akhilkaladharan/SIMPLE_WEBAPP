@@ -1,5 +1,40 @@
 # 🚀 Simple DevOps Web Application Project
 
+# 🚀 Simple DevOps Web Application Project
+
+![Build Status](https://img.shields.io/badge/build-passing-brightgreen)
+![Docker Pulls](https://img.shields.io/docker/pulls/akhiakhi1/simple-web-app)
+![Docker Image Size](https://img.shields.io/docker/image-size/akhiakhi1/simple-web-app/latest)
+![License](https://img.shields.io/badge/license-MIT-blue)
+![Kubernetes](https://img.shields.io/badge/kubernetes-deployed-blue)
+![Jenkins](https://img.shields.io/badge/CI-Jenkins-red)
+
+---
+
+## 📌 Overview
+
+This project demonstrates a complete **end-to-end DevOps workflow**:
+
+- Simple Node.js web application  
+- Containerization using Docker  
+- CI pipeline using Jenkins  
+- Deployment on Kubernetes  
+- Service exposure using NodePort  
+
+---
+
+## 🧱 Tech Stack
+
+- Node.js  
+- Docker  
+- Jenkins  
+- Kubernetes  
+
+---
+
+## 📁 Project Structure
+
+
 ## 📌 Overview
 
 This project demonstrates a complete **end-to-end DevOps workflow**:
