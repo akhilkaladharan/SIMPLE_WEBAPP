@@ -1,12 +1,12 @@
-const http = require('http');
+const express = require('express');
+const os = require('os');
 
-const PORT = 3000;
+const app = express(); //create app
 
-const server = http.createServer((req, res) => {
-    res.writeHead(200, { 'Content-Type': 'text/plain' });
-    res.end('Hello from DevOps Project 🚀');
+app.get('/', (req, res) => {
+    res.send(`Hello from pod: ${os.hostname()}`);
 });
 
-server.listen(PORT, () => {
-    console.log(`Server running on http://localhost:${PORT}`);
+app.listen(3000, () => {
+    console.log('Server running on port 3000');
 });
